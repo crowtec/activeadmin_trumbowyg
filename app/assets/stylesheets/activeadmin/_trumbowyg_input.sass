@@ -6,7 +6,8 @@
 
 body.active_admin form .trumbowyg-box
   display: inline-block
-  width: calc(80% - 22px)
+  width: calc(80% - 2px)
+  margin: 0
   button
     background: transparent
     border-radius: 0
@@ -35,10 +36,13 @@ body.active_admin form .trumbowyg-box
       margin: 0 1.5em 1.5em 0
       padding-left: 1.5em
   .trumbowyg-button-pane
-    background: transparent
+    //background: transparent
     border-bottom: 0 none
-  .trumbowyg-dropdown >button:hover
-    background-color: #ecf0f1
+  .trumbowyg-dropdown 
+    > button
+      font-weight: 300;
+      &:hover
+        background-color: #ecf0f1
   .trumbowyg-modal
     input[type="text"]
       border: 1px solid #DEDEDE
